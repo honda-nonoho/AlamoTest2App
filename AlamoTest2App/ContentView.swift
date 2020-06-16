@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List(0 ..< 47) { item in
+            VStack {
+                Text("都道府県名")
+                Text("死亡者数")
+                Text("感染者数")
+            }
+        }
+        
     }
 }
 
@@ -19,3 +26,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
